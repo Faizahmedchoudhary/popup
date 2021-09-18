@@ -1,0 +1,101 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    padding: 0.7rem;
+    background: #F27182;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+
+}
+
+.popup{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 30vw;
+    margin: auto;
+    border: 2px solid black;
+    background: rgb(236, 193, 137);
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    margin-top: 1rem;
+    
+}
+.form{
+    margin-top: 2rem;
+}
+input{
+display: block;
+width: 20vw;
+height: 3vh;
+border: none;
+padding: 0.4rem;
+
+}
+
+.form div{
+    margin: 3rem;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+.img{
+
+    margin: auto;
+}
+
+.close img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#closeimg:hover{
+    transform: rotate(360deg);
+    transition: transform 3s ;
+}
+
+@keyframes popupani {
+    0%{
+      right: 0vw; 
+    }
+    50%{
+        
+        right: 10vw; 
+    }
+    100%{
+        right: 20vw; 
+
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    #closeimg{
+        width: 20px;
+        height: 20px;
+    }
+}
+
